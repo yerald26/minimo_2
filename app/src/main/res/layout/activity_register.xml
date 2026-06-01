@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dungeon_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🗡️"
+            android:textSize="52sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREAR HÉROE"
+            android:textColor="@color/dungeon_gold"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.25"
+            android:fontFamily="serif"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMIENZA TU LEYENDA"
+            android:textColor="@color/dungeon_text_label"
+            android:textSize="10sp"
+            android:letterSpacing="0.2"
+            android:fontFamily="serif"
+            android:layout_marginBottom="36dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_dungeon"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧙 NOMBRE DE HÉROE"
+                android:textColor="@color/dungeon_text_label"
+                android:textSize="9sp"
+                android:letterSpacing="0.2"
+                android:fontFamily="serif"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_dungeon"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="NombreHéroe"
+                android:textColor="@color/dungeon_text_light"
+                android:textSize="13sp"
+                android:fontFamily="serif"
+                android:inputType="text"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✉ EMAIL"
+                android:textColor="@color/dungeon_text_label"
+                android:textSize="9sp"
+                android:letterSpacing="0.2"
+                android:fontFamily="serif"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_dungeon"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="tu@email.com"
+                android:textColor="@color/dungeon_text_light"
+                android:textSize="13sp"
+                android:fontFamily="serif"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔒 CONTRASEÑA"
+                android:textColor="@color/dungeon_text_label"
+                android:textSize="9sp"
+                android:letterSpacing="0.2"
+                android:fontFamily="serif"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_dungeon"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="••••••••"
+                android:textColor="@color/dungeon_text_light"
+                android:textSize="13sp"
+                android:fontFamily="serif"
+                android:inputType="textPassword"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔒 CONFIRMAR CONTRASEÑA"
+                android:textColor="@color/dungeon_text_label"
+                android:textSize="9sp"
+                android:letterSpacing="0.2"
+                android:fontFamily="serif"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input_dungeon"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="••••••••"
+                android:textColor="@color/dungeon_text_light"
+                android:textSize="13sp"
+                android:fontFamily="serif"
+                android:inputType="textPassword"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_btn_red"
+                android:text="🗡️ CREAR PERSONAJE"
+                android:textColor="@color/dungeon_text_light"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:fontFamily="serif"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Ya tienes cuenta? "
+                android:textColor="@color/dungeon_text_label"
+                android:textSize="12sp"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:id="@+id/tvGoToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Iniciar sesión"
+                android:textColor="@color/dungeon_text_link"
+                android:textSize="12sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

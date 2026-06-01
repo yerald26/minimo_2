@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.DungeonRun" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/dungeon_gold</item>
+        <item name="colorPrimaryDark">@color/dungeon_card</item>
+        <item name="colorAccent">@color/dungeon_gold</item>
+        <item name="android:windowBackground">@color/dungeon_bg</item>
+        <item name="android:statusBarColor">@color/dungeon_bg</item>
+    </style>
+</resources>

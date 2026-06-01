@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dungeon_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚔️"
+        android:textSize="64sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido, Héroe!"
+        android:textColor="@color/dungeon_gold"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El dungeon te espera..."
+        android:textColor="@color/dungeon_text_label"
+        android:textSize="13sp"
+        android:fontFamily="serif"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/btnTienda"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_btn_gold"
+        android:text="Ir a la Tienda"
+        android:textColor="@color/dungeon_text_light"
+        android:textSize="12sp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:fontFamily="serif"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnMochila"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_btn_gold"
+        android:text="Ver Mochila"
+        android:textColor="@color/dungeon_text_light"
+        android:textSize="12sp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:fontFamily="serif"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_btn_gold"
+        android:text="Jugar"
+        android:textColor="@color/dungeon_text_light"
+        android:textSize="12sp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:fontFamily="serif"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_btn_gold"
+        android:text="Cerrar sesión"
+        android:textColor="@color/dungeon_text_light"
+        android:textSize="12sp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:fontFamily="serif"/>
+
+</LinearLayout>
