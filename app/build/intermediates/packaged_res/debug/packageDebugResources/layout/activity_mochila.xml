@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dungeon_bg"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTituloMochila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MI MOCHILA"
+        android:textColor="@color/dungeon_gold"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Lista donde se verán los objetos -->
+    <TextView
+        android:id="@+id/tvListaObjetos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:text="Tu mochila está vacía..."
+        android:textColor="@color/dungeon_text_light"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloMochila"
+        app:layout_constraintBottom_toTopOf="@id/btnVolverMochila" />
+
+    <Button
+        android:id="@+id/btnVolverMochila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLVER AL MENÚ"
+        android:textColor="@color/dungeon_text_light"
+        android:backgroundTint="@color/dungeon_gold_btn"
+        android:fontFamily="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,7 @@
 package com.eetac.proyecto_dsa.network;
 
+import com.eetac.proyecto_dsa.model.Evento;
+import com.eetac.proyecto_dsa.model.InscripcionRequest;
 import com.eetac.proyecto_dsa.model.InventarioJugador;
 import com.eetac.proyecto_dsa.model.Item;
 import com.eetac.proyecto_dsa.model.PeticionCompra;
@@ -35,4 +37,9 @@ public interface ApiService {
     // GET /api/juego/tienda
     @GET("juego/tienda")
     Call<TiendaJuego> getTienda();
+
+    @GET("juego/eventos")
+    Call<List<Evento>> getEventos();
+    @POST("juego/eventos/inscripcion")
+    Call<Void> inscribirseEvento(@Body InscripcionRequest request);
 }

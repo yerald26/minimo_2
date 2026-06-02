@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/layout_activity_eventos.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/layout/activity_eventos.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/layout_item_evento.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/layout/item_evento.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/layout_activity_tienda.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/layout/activity_tienda.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/layout_activity_login.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/drawable_bg_btn_gold.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/drawable/bg_btn_gold.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/layout_activity_mochila.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/layout/activity_mochila.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/drawable_bg_input_dungeon.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/drawable/bg_input_dungeon.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/layout_activity_register.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/drawable_bg_btn_red.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/drawable/bg_btn_red.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/layout_item_tienda_card.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/layout/item_tienda_card.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.eetac.proyecto_dsa.app-debug-32:/drawable_bg_card_dungeon.xml.flat",
+        "source": "com.eetac.proyecto_dsa.app-main-34:/drawable/bg_card_dungeon.xml"
+    }
+]

@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     private Button btnLogout;
     private LocalUserManager userManager;
 
-    // Reemplaza startActivityForResult — forma moderna
     private final ActivityResultLauncher<Intent> unityLauncher =
             registerForActivityResult(
                     new ActivityResultContracts.StartActivityForResult(),
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnMochila = findViewById(R.id.btnMochila);
         Button btnJugar   = findViewById(R.id.btnJugar);
         btnLogout         = findViewById(R.id.btnLogout);
-
+        Button btnEventos = findViewById(R.id.btnEventos);
         tvWelcome.setText("¡Bienvenido, " + userManager.getLoggedUsername() + "!");
 
         btnTienda.setOnClickListener(v ->
@@ -69,5 +68,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, LoginActivity.class));
             finish();
         });
+
+        btnEventos.setOnClickListener(v ->
+                startActivity(new Intent(this, EventosActivity.class))
+        );
     }
 }

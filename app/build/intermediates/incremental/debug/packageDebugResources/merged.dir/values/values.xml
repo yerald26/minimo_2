@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dungeon_bg">#0D0A04</color>
+    <color name="dungeon_border">#4A3010</color>
+    <color name="dungeon_card">#1A1209</color>
+    <color name="dungeon_gold">#E8A84A</color>
+    <color name="dungeon_gold_btn">#B06010</color>
+    <color name="dungeon_gold_dark">#C87820</color>
+    <color name="dungeon_input">#1F1508</color>
+    <color name="dungeon_red">#7A1010</color>
+    <color name="dungeon_text_hint">#3D2C10</color>
+    <color name="dungeon_text_label">#7A5C2E</color>
+    <color name="dungeon_text_light">#FFF0D0</color>
+    <color name="dungeon_text_link">#E8A84A</color>
+    <color name="white">#FFFFFF</color>
+    <style name="Theme.DungeonRun" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/dungeon_gold</item>
+        <item name="colorPrimaryDark">@color/dungeon_card</item>
+        <item name="colorAccent">@color/dungeon_gold</item>
+        <item name="android:windowBackground">@color/dungeon_bg</item>
+        <item name="android:statusBarColor">@color/dungeon_bg</item>
+    </style>
+</resources>
