@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText etUsername, etPassword;
     private Button btnLogin;
+    private Button btnBypass;
     private TextView tvGoToRegister;
     private LocalUserManager userManager;
 
@@ -38,14 +39,22 @@ public class LoginActivity extends AppCompatActivity {
         etUsername     = findViewById(R.id.etUsername);
         etPassword     = findViewById(R.id.etPassword);
         btnLogin       = findViewById(R.id.btnLogin);
+        btnBypass      = findViewById(R.id.btnBypass);
         tvGoToRegister = findViewById(R.id.tvGoToRegister);
+
+        btnBypass.setOnClickListener(v -> {
+            userManager.saveSession("Tester");
+            userManager.updateCoins(999);
+            Toast.makeText(this, "Bypass: Iniciando como Tester", Toast.LENGTH_SHORT).show();
+            goToMain();
+        });
 
         btnLogin.setOnClickListener(v -> {
             String nombre   = etUsername.getText().toString().trim();
             String password = etPassword.getText().toString().trim();
 
             if (nombre.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "⚠ Rellena todos los campos", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Rellena todos los campos", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -67,7 +76,7 @@ public class LoginActivity extends AppCompatActivity {
                         goToMain();
                     } else {
                         Toast.makeText(LoginActivity.this,
-                                "⚠ Usuario o contraseña incorrectos",
+                                " Usuario o contraseña incorrectos",
                                 Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -75,15 +84,13 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onFailure(Call<User> call, Throwable t) {
                     Toast.makeText(LoginActivity.this,
-                            "⚠ Sin conexión con el servidor",
+                            " Sin conexión con el servidor",
                             Toast.LENGTH_SHORT).show();
                 }
             });
         });
 
-        tvGoToRegister.setOnClickListener(v ->
-                startActivity(new Intent(this, RegisterActivity.class))
-        );
+        tvGoToRegister.setOnClickListener(v -> startActivity(new Intent(this, RegisterActivity.class)));
     }
 
     private void goToMain() {

@@ -109,6 +109,21 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:letterSpacing="0.15"
+                android:fontFamily="serif"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnBypass"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_btn_gold"
+                android:backgroundTint="#666666"
+
+                android:text="BYPASS LOGIN (TEST)"
+                android:textColor="@color/dungeon_text_light"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
                 android:fontFamily="serif"/>
 
         </LinearLayout>
